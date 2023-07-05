@@ -1,4 +1,4 @@
-## Swagger
+### h3 Swagger
 http://localhost:8090/api/rateio/swagger-ui.html#
 
 ![image](https://github.com/mauritak/softexpert-backend-app/assets/8314016/1b024c4d-bc65-4efc-82be-3d4e833267f1)
