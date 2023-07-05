@@ -1,0 +1,26 @@
+server:
+  servlet:
+    context-path: /api/rateio
+  port: 8090
+  
+management:  
+  endpoints:
+    enabled-by-default: false
+    web:  
+      exposure:
+        include: "health, metrics"
+  endpoint:
+    health:
+      enabled: true
+    metrics:
+      enabled: true 
+
+
+pix:
+  sandbox:
+    client-id: 8d3172da-d931-3aa6-9709-be5c9954ab75
+    client-secret: d108eb4a-1ee8-46ba-909f-2586d7b9674c
+    url:
+      token: https://devportal.itau.com.br/api/jwt
+      cobranca-imediata-pix: https://devportal.itau.com.br/sandboxapi/itau-ep9-gtw-pix-recebimentos-conciliacoes-v2-ext/v2/cobrancas_imediata_pix
+    x-sandbox-token: eyJhbGciOiJIUzI1NiJ9.eyJzb3VyY2UiOiJzdHMtc2FuZGJveCIsImVudiI6IlAiLCJmbG93IjoiQ0MiLCJzY29wZSI6InBpeF9yZWNlYmltZW50b3NfZXh0X3YyLXNjb3BlLCBwYWdhbWVudG9zLXBpeGluZGlyZXRvcy12MS1leHQtYXdzLXNjb3BlLCBwaXhfcmVjZWJpbWVudG9zX2NvbmNpbGlhY29lc192Ml9leHQtc2NvcGUsIHNpc3BhZ19leHQtc2NvcGUsIGNhc2hfbWFuYWdlbWVudF9leHRfdjItc2NvcGUsIGRpY3QtaW5kaXJldG8tdjItZXh0LWF3cy1zY29wZSIsInN1YiI6IjhkMzE3MmRhLWQ5MzEtM2FhNi05NzA5LWJlNWM5OTU0YWI3NSIsImlhdCI6MTY4ODEzODAxNiwiZXhwIjoxNjg4MTM4NjE2fQ.MgEM-bH9L9HdCZz-AsbpGKlPuX44dZhj08_o-KkS6f8
